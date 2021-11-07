@@ -1,8 +1,7 @@
-const Card = (props) => {
-    const cards = props.cards;
+const Card = ({cards,title,handleDelete}) => {
   return (
     <div className="cards">
-      <h2>{props.title}</h2>
+      <h2>{title}</h2>
       <div className="card-list">
         {cards.map((card) => {
           return (
@@ -13,6 +12,7 @@ const Card = (props) => {
               </div>
               <div className="card-body">
                 <p className="card-passage">{card.body}</p>
+                <button onClick={()=>{handleDelete(card.author)}}>Delete Blog</button>
               </div>
             </div>
           );
