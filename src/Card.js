@@ -1,7 +1,10 @@
-const Card = ({cards,title,handleDelete}) => {
+const Card = ({ cards, title, handleDelete, handleRefresh }) => {
   return (
     <div className="cards">
       <h2>{title}</h2>
+      <button onClick={handleRefresh}>refresh</button>
+      <br />
+      <br />
       <div className="card-list">
         {cards.map((card) => {
           return (
@@ -12,7 +15,13 @@ const Card = ({cards,title,handleDelete}) => {
               </div>
               <div className="card-body">
                 <p className="card-passage">{card.body}</p>
-                <button onClick={()=>{handleDelete(card.author)}}>Delete Blog</button>
+                <button
+                  onClick={() => {
+                    handleDelete(card.id);
+                  }}
+                >
+                  Delete Blog
+                </button>
               </div>
             </div>
           );

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 
 body {
   background-color: rgb(39, 39, 39);
@@ -19,7 +19,7 @@ code {
     monospace;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
   .container {
     width: 80%;
     margin: auto;
@@ -84,7 +84,7 @@ code {
     color: transparent;
     border: solid thin #ff512f;
     border-top: solid thin #f09819;
-    border-bottom: solid thin #f09819;
+    border-right: solid thin #f09819;
   }
   button:hover {
     background: linear-gradient(to right, #ff512f, #f09819);
@@ -101,7 +101,7 @@ code {
   }
   .card {
     /* display: flex; */
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px 0 #ff522f79;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 300px;
@@ -112,7 +112,7 @@ code {
     /* min-height: 300px; */
   }
   .card:hover {
-    box-shadow: 0 8px 10px 0 rgba(68, 41, 85, 0.2);
+    box-shadow: 0 8px 10px 0 #f09619b4;
   }
   .card-head {
     font-size: large;
@@ -197,7 +197,7 @@ code {
   }
 
   .hero h1 {
-    font-size: 110px;
+    font-size: 100px;
     font-weight: 900;
     text-transform: uppercase;
     padding-bottom: 0;
@@ -216,14 +216,13 @@ code {
 
   .heroBack .hero button {
     padding: 20px 40px;
-    color: whitesmoke;
-    background-image: linear-gradient(to right, #ff512f, #f09819);
+    /* background-image: linear-gradient(to right, #ff512f, #f09819);
     -webkit-background-clip: text;
     color: transparent;
     border: solid thin #ff512f;
     border-top: solid thin #f09819;
-    border-bottom: solid thin #f09819;
-    transition: all ease-out 0.5s;
+    border-right: solid thin #f09819;
+    transition: all ease-out 0.5s; */
   }
   .heroBack .hero button:hover {
     transition: all ease-out 0.5s;
@@ -231,4 +230,33 @@ code {
     background: linear-gradient(to right, #ff512f, #f09819);
     color: #333;
   }
+}
+
+
+#loader{
+  height: 50px;
+  width: 50px;
+  border: solid 10px whitesmoke;
+ border-bottom-color: transparent;
+
+  border-radius: 100%;
+  animation: load .61s linear .11s infinite;
+
+
+  /* border-bottom: none; */
+}
+
+@keyframes load {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(180deg);
+
+  }
+  100%{
+    transform: rotateZ(360deg);
+
+  }
+  
 }

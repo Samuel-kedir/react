@@ -1,14 +1,14 @@
 import Navbar from "./Navbar";
 
-const Hero = (props) => {
+const Hero = ({HeroTitle,HeroSubtitle,CTA,handleHeading}) => {
   return (
     <div className="heroBack">
       <Navbar />
 
       <div className="hero">
-        <h1>{props.HeroTitle}</h1>
-        <h4>{props.HeroSubtitle}</h4>
-        <button>{props.CTA}</button>
+        <h1>{HeroTitle}</h1>
+        <h4>{HeroSubtitle}</h4>
+        <button onClick={handleHeading}>{CTA}</button>
       </div>
     </div>
   );

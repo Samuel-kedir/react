@@ -1,0 +1,40 @@
+{
+  "blogs": [
+    {
+      "title": "california ",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "The king",
+      "id": 1
+    },
+    {
+      "title": "simba",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "Non sense",
+      "id": 2
+    },
+    {
+      "title": "Non sense",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "the lion king",
+      "id": 3
+    },
+    {
+      "title": "My new website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "mario",
+      "id": 4
+    },
+    {
+      "title": "Welcome party",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "Dev op tips",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus eius velit illo. Sint a at officiis quidem voluptatum saepe quis, eligendi quas! Nesciunt excepturi dolorum dolores omnis voluptatibus ut!",
+      "author": "Rebekah",
+      "id": 6
+    }
+  ]
+}
