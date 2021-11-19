@@ -23,6 +23,7 @@ code {
   .container {
     width: 80%;
     margin: auto;
+    margin-top: 40px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -70,12 +71,13 @@ code {
     border-bottom: solid thin #f09819;
   }
 
-  button {
+  button,
+  .button {
     padding: 10px 20px;
     border: solid thin;
     color: #333;
     transition: all ease-in-out 0.35s;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 16px;
@@ -86,7 +88,8 @@ code {
     border-top: solid thin #f09819;
     border-right: solid thin #f09819;
   }
-  button:hover {
+  button:hover,
+  .button:hover {
     background: linear-gradient(to right, #ff512f, #f09819);
     color: whitesmoke;
 
@@ -97,14 +100,15 @@ code {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
+    row-gap: 100px;
   }
   .card {
     /* display: flex; */
     box-shadow: 0 4px 5px 0 #ff522f79;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    width: 300px;
+    width: 280px;
     transition: all ease-in-out 0.3s;
     background-color: #333;
     /* background-color: whitesmoke; */
@@ -232,31 +236,30 @@ code {
   }
 }
 
-
-#loader{
+#loader {
   height: 50px;
   width: 50px;
   border: solid 10px whitesmoke;
- border-bottom-color: transparent;
+  border-bottom-color: transparent;
 
   border-radius: 100%;
-  animation: load .61s linear .11s infinite;
-
+  animation: load 0.61s linear 0.11s infinite;
 
   /* border-bottom: none; */
 }
 
 @keyframes load {
-  0%{
+  0% {
     transform: rotateZ(0deg);
   }
-  50%{
+  50% {
     transform: rotateZ(180deg);
-
   }
-  100%{
+  100% {
     transform: rotateZ(360deg);
-
   }
-  
+}
+
+a {
+  text-decoration: none;
 }

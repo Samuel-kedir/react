@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
 
-const Hero = ({HeroTitle,HeroSubtitle,CTA,handleHeading}) => {
+const Hero = ({HeroTitle,HeroSubtitle,CTA,handleHeading,buttonActive}) => {
   return (
     <div className="heroBack">
-      <Navbar />
+      <Navbar pageTitle={HeroTitle} />
 
       <div className="hero">
         <h1>{HeroTitle}</h1>

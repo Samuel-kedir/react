@@ -1,22 +1,28 @@
-const Navbar = () => {
-    return ( 
-        <nav className="nav">
-                <h1>My Blogs</h1>
+import { Link } from "react-router-dom";
+const Navbar = ({pageTitle}) => {
+  return (
+    <nav className="nav">
+      <h1>{pageTitle}</h1>
 
-          <ul className="navbar">
-              
-                <li><a href="/home" className="active">home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/">Blog</a></li>
+      <ul className="navbar">
+        <li>
+          <Link to="/" >  home </Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/blogs">Blog</Link>
+        </li>
+        <li>
+          <Link to="/create">Create</Link>
+        </li>
+      </ul>
 
-          </ul>
-            
-                {/* inline style  */}
-                {/* <a href="/" style={{background:'black', color: 'white'}}>Home</a>  */}
-                
-          
-        </nav>
-     );
-}
- 
+      {/* inline style  */}
+      {/* <a href="/" style={{background:'black', color: 'white'}}>Home</Link>  */}
+    </nav>
+  );
+};
+
 export default Navbar;
