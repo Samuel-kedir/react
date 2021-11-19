@@ -4,7 +4,7 @@ import Home from './Home';
 import Blogs from './Blogs';
 import Create from './Create';
 import BlogDetail from './BlogDetail';
-
+import NotFound from './NotFound';
 function App() {
   return (
     <Router>
@@ -24,6 +24,9 @@ function App() {
         </Route>
         <Route path="/create">
           <Create/>
+        </Route>
+        <Route path="*">
+          <NotFound/>
         </Route>
        
       </Switch>

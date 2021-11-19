@@ -61,6 +61,7 @@ code {
     text-decoration: none;
     background-image: linear-gradient(to right, #ff512f, #f09819);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
   }
 
@@ -83,6 +84,7 @@ code {
     font-size: 16px;
     background-image: linear-gradient(to right, #ff512f, #f09819);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     border: solid thin #ff512f;
     border-top: solid thin #f09819;
@@ -135,6 +137,8 @@ code {
     /* padding-bottom: -50px; */
     background-image: linear-gradient(to right, #ff512f, #f09819);
     -webkit-background-clip: text;
+    background-clip: text;
+
     color: transparent;
   }
 
@@ -186,6 +190,8 @@ code {
     margin-top: 0;
     background-image: linear-gradient(to right, #ff512f, #f09819);
     -webkit-background-clip: text;
+    background-clip: text;
+
     color: transparent;
   }
 
@@ -262,4 +268,29 @@ code {
 
 a {
   text-decoration: none;
+}
+
+.form-group{
+  /* border: solid; */
+  padding: 10px;
+  margin: auto;
+  width: max(50vw,400px);
+  margin-bottom: 20px;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.input{
+  padding: 15px 20px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
